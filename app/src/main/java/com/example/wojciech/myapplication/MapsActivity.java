@@ -13,6 +13,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polygon;
+import com.google.android.gms.maps.model.PolygonOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
@@ -40,7 +42,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap)     //Pozycja (marker) startowa
     {
         mMap = googleMap;
-        LatLng start = new LatLng(49.7836529,19.0577128);
+        LatLng start = new LatLng(49.78317, 19.05755);
         mMap.addMarker(new MarkerOptions().position(start).title("ATH"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(start));
         mMap.setMinZoomPreference(18.5f);
@@ -48,7 +50,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //InteriorL inter = new InteriorL();
        // inter.Draw_L_outside();
 
-        Polyline lineL_outside0 = mMap.addPolyline(new PolylineOptions()
+        Polyline lineL_outside0 = mMap.addPolyline(new PolylineOptions()                    //kontury budynku L
                 .add(new LatLng(49.783415, 19.056886), new LatLng(49.783593, 19.057136))
                 .width(8)
                 .color(Color.DKGRAY));
@@ -112,6 +114,237 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .add(new LatLng(49.783415, 19.056886), new LatLng(49.783204, 19.057243))
                 .width(8)
                 .color(Color.DKGRAY));
+
+
+        Polyline lineL_indoor0 = mMap.addPolyline(new PolylineOptions()                   //wnętrze 1 piętro budynek L
+                .add(new LatLng(49.783079, 19.057466), new LatLng(49.782967,19.057300))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor1 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.783079, 19.057466), new LatLng(49.782926,19.057716))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor2 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78268, 19.05844), new LatLng(49.78286, 19.05815))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor2_1 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.7829, 19.05809), new LatLng(49.78319, 19.0576))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor3 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78264, 19.05839), new LatLng(49.78282, 19.05809))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor3_1 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78285, 19.05804), new LatLng(49.78298, 19.05783))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor3_2 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78301, 19.05778), new LatLng(49.78309, 19.05765))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor4 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78302, 19.05756), new LatLng(49.78309, 19.05765))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor5 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.7832, 19.05762), new LatLng(49.78318, 19.05766))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor6 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78319, 19.0576), new LatLng(49.7832, 19.05762))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor7 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78318, 19.05766), new LatLng(49.78323, 19.05773))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor8 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78325, 19.0577), new LatLng(49.78323, 19.05773))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor9 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78322, 19.05765), new LatLng(49.78325, 19.0577))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor10 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78321, 19.05766), new LatLng(49.78322, 19.05765))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor11 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78321, 19.05766), new LatLng(49.78322, 19.05768))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor12 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78322, 19.05768), new LatLng(49.78323, 19.05767))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor13 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78328, 19.05766), new LatLng(49.78321, 19.05756))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor14 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78328, 19.05745), new LatLng(49.78321, 19.05756))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor15 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78328, 19.05745), new LatLng(49.78329, 19.05747))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor16 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.7834, 19.05728), new LatLng(49.78329, 19.05747))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor17 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.7834, 19.05728), new LatLng(49.783415, 19.0573))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor18 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.7835, 19.05714), new LatLng(49.783415, 19.0573))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor19 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.7835, 19.05714), new LatLng(49.78341, 19.05701))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor20 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78333, 19.05715), new LatLng(49.78341, 19.05701))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor21 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78333, 19.05715), new LatLng(49.783355, 19.05719))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor22 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.7832, 19.05745), new LatLng(49.783355, 19.05719))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor23 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.7832, 19.05745), new LatLng(49.78314, 19.05736))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor24 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78329, 19.05747), new LatLng(49.78335, 19.05755))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor25 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78334, 19.05738), new LatLng(49.7834, 19.05746))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor26 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78338, 19.05731), new LatLng(49.78344, 19.0574))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor27 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.783415, 19.0573), new LatLng(49.783455, 19.05737))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor28 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78345, 19.05724), new LatLng(49.78349, 19.05731))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor29 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.783485, 19.05718), new LatLng(49.783525, 19.05725))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor30 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78348, 19.0571), new LatLng(49.78352, 19.05703))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor31 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78344, 19.057045), new LatLng(49.78348, 19.056975))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor32 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78345, 19.05694), new LatLng(49.78341, 19.05701))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor33 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78339, 19.056925), new LatLng(49.78343, 19.05698))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor34 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.7834, 19.05703), new LatLng(49.78336, 19.056975))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor35 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78335, 19.057113), new LatLng(49.78331, 19.057057))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor36 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.783325, 19.057235), new LatLng(49.78326, 19.057144))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor37 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.783225, 19.05776), new LatLng(49.78316, 19.05765))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor38 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78313, 19.0577), new LatLng(49.7832, 19.0578))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor39 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78317, 19.05785), new LatLng(49.7831, 19.05775))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor40 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78314, 19.0579), new LatLng(49.78307, 19.0578))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor41 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78301, 19.05778), new LatLng(49.78294, 19.05769))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor42 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.782915, 19.057735), new LatLng(49.78298, 19.05783))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor43 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78291, 19.057955), new LatLng(49.78284, 19.057855))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor44 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78309, 19.057985), new LatLng(49.78302, 19.05788))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor45 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78301, 19.05812), new LatLng(49.78294, 19.05801))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor46 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78285, 19.05804), new LatLng(49.78279, 19.05794))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor47 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.782965, 19.05819), new LatLng(49.7829, 19.05809))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor48 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78276, 19.058), new LatLng(49.78282, 19.05809))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor49 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78293, 19.05825), new LatLng(49.78286, 19.05815))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor50 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78275, 19.05833), new LatLng(49.782815, 19.058435))
+                .width(8)
+                .color(Color.DKGRAY));
+        Polyline lineL_indoor51 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(49.78269, 19.05811), new LatLng(49.78276, 19.0582))
+                .width(8)
+                .color(Color.DKGRAY));
+
+        PolygonOptions rectOptions = new PolygonOptions()
+                .add(new LatLng(49.78341, 19.05721),
+                        new LatLng(49.78338, 19.05715),
+                        new LatLng(49.78342, 19.05708),
+                        new LatLng(49.783455, 19.05714));
+        Polygon polygon = mMap.addPolygon(rectOptions);
+
+
 
     }
 
