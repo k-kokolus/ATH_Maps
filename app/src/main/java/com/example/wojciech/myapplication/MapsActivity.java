@@ -12,6 +12,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
@@ -355,19 +356,54 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         String location = location_tf.getText().toString();
         List<android.location.Address> addressList = null;
 
-        if (location != null || !location.equals(""))
+
+        if (location == "L134" || location.equals("L134"))
         {
-            Geocoder geocoder = new Geocoder(this);
-            try {
-                addressList = geocoder.getFromLocationName(location, 1);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            android.location.Address address = addressList.get(0);
-            LatLng latLng = new LatLng(address.getLatitude(),address.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(latLng).title("Znalazłem"));
-            mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-            mMap.setMinZoomPreference(18.5f);
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783210, 19.057343))
+                    .title("L134"));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783210, 19.057343)));
         }
+
+        if (location == "L120" || location.equals("L120"))
+        {
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783314, 19.057127))
+                    .title("L120"));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783314, 19.057127)));
+        }
+
+        if (location == "Dziekanat" || location.equals("Dziekanat"))
+        {
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783450, 19.057308))
+                    .title("Dziekanat"));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783450, 19.057308)));
+        }
+
+        if (location == "L135" || location.equals("L135"))
+        {
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.782959, 19.057495))
+                    .title("L135"));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.782959, 19.057495)));
+        }
+
+        if (location == "Prodziekan" || location.equals("Prodziekan"))
+        {
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783528, 19.057143))
+                    .title("Prodziekan"));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783528, 19.057143)));
+        }
+
+        if (location == "Toaleta" || location.equals("Toaleta"))
+        {
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.782960, 19.058136))
+                    .title("Toaleta"));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.782960, 19.058136)));
+        }
+
     }
 }
