@@ -4,7 +4,9 @@ import android.graphics.Color;
 import android.location.Geocoder;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -20,6 +22,8 @@ import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static com.example.wojciech.myapplication.R.id.SearchBox;
 
@@ -36,6 +40,40 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        Button bm1 = (Button) findViewById(R.id.About);
+        bm1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+            final AlertDialog alertDialog = new AlertDialog.Builder(MapsActivity.this).create();
+            alertDialog.setMessage("O programie:\n\nProjekt przedstawiający mapę Akademii Techniczno-Humanistycznej za pomocą wizualizacji 2D");
+            alertDialog.show();
+
+            final Timer timer2 = new Timer();
+            timer2.schedule(new TimerTask() {
+                public void run() {
+                    alertDialog.dismiss();
+                    timer2.cancel();
+                }
+            }, 4000); // timer odliczający 4 sekundy wyświetlania okna
+        }});
+
+        Button bm2 = (Button) findViewById(R.id.Authors);
+        bm2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                final AlertDialog alertDialog = new AlertDialog.Builder(MapsActivity.this).create();
+                alertDialog.setMessage("Autorzy: \n\nWojciech Kaczmarczyk \nKornelia Kokolus \nKamil Pieczka");
+                alertDialog.show();
+
+                final Timer timer2 = new Timer();
+                timer2.schedule(new TimerTask() {
+                    public void run() {
+                        alertDialog.dismiss();
+                        timer2.cancel();
+                    }
+                }, 4000); // timer odliczający 4 sekundy wyświetlania okna
+
+            }});
+
     }
 
     @Override
@@ -370,4 +408,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setMinZoomPreference(18.5f);
         }
     }
+
+
+    public void Authors(View view )
+    {
+
+    }
+
 }
