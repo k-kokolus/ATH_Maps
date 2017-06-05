@@ -2118,6 +2118,580 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     .position(new LatLng(49.78334, 19.05746))
                     .title("L433"));
         }
+        if (location == "Katedra A" || location.equals("Katedra A") || location.equals("katedra a"))
+        {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783469, 19.058205)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed=(EditText)findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783469, 19.058205))
+                    .title("Katedra A"));
+        }
+        if (location == "A9" || location.equals("A9") || location.equals("a9"))
+        {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783362, 19.058374)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed=(EditText)findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783362, 19.058374))
+                    .title("A9"));
+        }
+        if (location == "A8" || location.equals("A8") || location.equals("a8")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783322, 19.058448)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783322, 19.058448))
+                    .title("A8"));
+        }
+        if (location == "A7" || location.equals("A7") || location.equals("a7")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783313, 19.058472)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783313, 19.058472))
+                    .title("A7"));
+        }
+        if (location == "WC A" || location.equals("WC A") || location.equals("wc a")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783300, 19.058501)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783300, 19.058501))
+                    .title("WC A"));
+        }
+        if (location == "A5" || location.equals("A5") || location.equals("a5")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783260, 19.058539)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783260, 19.058539))
+                    .title("A5"));
+        }
+        if (location == "A4" || location.equals("A4") || location.equals("a4")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783241, 19.058574)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783241, 19.058574))
+                    .title("A4"));
+        }
+        if (location == "A3" || location.equals("A3") || location.equals("a3")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783218, 19.058616)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783218, 19.058616))
+                    .title("A3"));
+        }
+        if (location == "A2" || location.equals("A2") || location.equals("a2")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783193, 19.058653)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783193, 19.058653))
+                    .title("A2"));
+        }
+        if (location == "A26" || location.equals("A26") || location.equals("a26")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783104, 19.058816)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783104, 19.058816))
+                    .title("A26"));
+        }
+        if (location == "A25" || location.equals("A25") || location.equals("a25")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783063, 19.058879)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783063, 19.058879))
+                    .title("A25"));
+        }
+        if (location == "A15a" || location.equals("A15a") || location.equals("a15a")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783402, 19.058091)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783402, 19.058091))
+                    .title("A15a"));
+        }
+        if (location == "A15" || location.equals("A15") || location.equals("a15")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783327, 19.058239)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783327, 19.058239))
+                    .title("A15"));
+        }
+        if (location == "A16" || location.equals("A16") || location.equals("a16")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783287, 19.058304)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783287, 19.058304))
+                    .title("A16"));
+        }
+        if (location == "A17" || location.equals("A17") || location.equals("a17")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783266, 19.058337)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783266, 19.058337))
+                    .title("A17"));
+        }
+        if (location == "A18" || location.equals("A18") || location.equals("a18")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783231, 19.058395)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783231, 19.058395))
+                    .title("A18"));
+        }
+        if (location == "A19" || location.equals("A19") || location.equals("a19")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783179, 19.058489)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783179, 19.058489))
+                    .title("A19"));
+        }
+        if (location == "A20" || location.equals("A20") || location.equals("a20")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783137, 19.058564)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783137, 19.058564))
+                    .title("A20"));
+        }
+        if (location == "A21" || location.equals("A21") || location.equals("a21")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783099, 19.058619)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783099, 19.058619))
+                    .title("A21"));
+        }
+        if (location == "A22" || location.equals("A22") || location.equals("a22")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783069, 19.058678)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783069, 19.058678))
+                    .title("A22"));
+        }
+        if (location == "A23" || location.equals("A23") || location.equals("a23")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783039, 19.058736)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783039, 19.058736))
+                    .title("A23"));
+        }
+        if (location == "A24" || location.equals("A24") || location.equals("a24")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783000, 19.058793)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783000, 19.058793))
+                    .title("A24"));
+        }
+        if (location == "A24" || location.equals("A24") || location.equals("a24")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783000, 19.058793)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783000, 19.058793))
+                    .title("A24"));
+        }
+        if (location == "Las Vegas" || location.equals("Las Vegas") || location.equals("las vegas")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(36.171868, -115.146642)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(36.171868, -115.146642))
+                    .title("Las Vegas"));
+        }
+        if (location == "B25" || location.equals("B25") || location.equals("b25")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783747, 19.058510)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783747, 19.058510))
+                    .title("B25"));
+        }
+        if (location == "B23" || location.equals("B23") || location.equals("b23")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783713, 19.058562)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783713, 19.058562))
+                    .title("B23"));
+        }
+        if (location == "B22" || location.equals("B22") || location.equals("b22")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783689, 19.058609)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783689, 19.058609))
+                    .title("B22"));
+        }
+        if (location == "B19" || location.equals("B19") || location.equals("b19")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783600, 19.058754)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783600, 19.058754))
+                    .title("B19"));
+        }
+        if (location == "B17" || location.equals("B17") || location.equals("b17")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783570, 19.058815)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783570, 19.058815))
+                    .title("B17"));
+        }
+        if (location == "B16" || location.equals("B16") || location.equals("b16")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783548, 19.058853)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783548, 19.058853))
+                    .title("B16"));
+        }
+        if (location == "Toaleta B" || location.equals("Toaleta B") || location.equals("toaleta b")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783527, 19.058886)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783527, 19.058886))
+                    .title("Toaleta B"));
+        }
+        if (location == "B11" || location.equals("B11") || location.equals("b11")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783500, 19.058943)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783500, 19.058943))
+                    .title("B11"));
+        }
+        if (location == "B10" || location.equals("B10") || location.equals("b10")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783472, 19.058981)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783472, 19.058981))
+                    .title("B10"));
+        }
+        if (location == "B9" || location.equals("B9") || location.equals("b9")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783447, 19.059017)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783447, 19.059017))
+                    .title("B9"));
+        }
+        if (location == "B8" || location.equals("B8") || location.equals("b8")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783418, 19.059054)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783418, 19.059054))
+                    .title("B8"));
+        }
+        if (location == "Katedry B" || location.equals("Katedry B") || location.equals("katedry b")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783335, 19.059193)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783335, 19.059193))
+                    .title("Katedry B"));
+        }
+        if (location == "B26" || location.equals("B26") || location.equals("b26")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783756, 19.058693)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783756, 19.058693))
+                    .title("B26"));
+        }
+        if (location == "B27" || location.equals("B27") || location.equals("b27")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783671, 19.058823)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783671, 19.058823))
+                    .title("B27"));
+        }
+        if (location == "B29" || location.equals("B29") || location.equals("b29")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783636, 19.058904)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783636, 19.058904))
+                    .title("B29"));
+        }
+        if (location == "B31" || location.equals("B31") || location.equals("b31")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783616, 19.058941)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783616, 19.058941))
+                    .title("B31"));
+        }
+        if (location == "B32" || location.equals("B32") || location.equals("b32")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783595, 19.058976)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783595, 19.058976))
+                    .title("B32"));
+        }
+        if (location == "B33" || location.equals("B33") || location.equals("b33")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783574, 19.059010)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783574, 19.059010))
+                    .title("B33"));
+        }
+        if (location == "B34" || location.equals("B34") || location.equals("b34")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783556, 19.059039)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783556, 19.059039))
+                    .title("B34"));
+        }
+        if (location == "B35" || location.equals("B35") || location.equals("b35")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783542, 19.059065)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783542, 19.059065))
+                    .title("B35"));
+        }
+        if (location == "B36" || location.equals("B36") || location.equals("b36")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783524, 19.059100)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783524, 19.059100))
+                    .title("B36"));
+        }
+        if (location == "B37" || location.equals("B37") || location.equals("b37")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783510, 19.059124)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783510, 19.059124))
+                    .title("B37"));
+        }
+        if (location == "B38" || location.equals("B38") || location.equals("b38")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783492, 19.059156)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783492, 19.059156))
+                    .title("B38"));
+        }
+        if (location == "B40" || location.equals("B40") || location.equals("b40")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783462, 19.059203)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783462, 19.059203))
+                    .title("B40"));
+        }
+        if (location == "B41" || location.equals("B41") || location.equals("b41")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783440, 19.059236)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783440, 19.059236))
+                    .title("B41"));
+        }
+        if (location == "B42" || location.equals("B42") || location.equals("b42")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783420, 19.059269)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783420, 19.059269))
+                    .title("B42"));
+        }
+        if (location == "B43" || location.equals("B43") || location.equals("b43")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783392, 19.059309)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783392, 19.059309))
+                    .title("B43"));
+        }
+        if (location == "B44" || location.equals("B44") || location.equals("b44")) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(49.783369, 19.059352)));
+            floor = 0;
+            floor_view = 0;
+            floor_choose();
+            final EditText ed = (EditText) findViewById(R.id.floor_number);
+            ed.setText(new Integer(floor_view).toString());
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(49.783369, 19.059352))
+                    .title("B44"));
+        }
     }
 }
 
